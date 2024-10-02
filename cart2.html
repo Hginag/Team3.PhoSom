@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Chèn header -->
+
+    <div class="container">
+        <div class="breadcrumb">
+            <span id="breadcrumb">Trang chủ > Giỏ hàng</span>
+        </div>
+        <div class="cart-container">
+            <div class="order-details">
+                <h2>Giỏ hàng của tôi</h2>
+                <table id="cart-table">
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Tổng</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align: center;">Không có sản phẩm nào</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="order-summary">
+                <h2>Tổng số tiền</h2>
+                <hr>
+                <div class="total">
+                    <h3 id="total-amount">Tổng cộng: 0 VND</h3>
+                </div>
+                <div class="checkout">
+                    <button>Thanh toán</button>
+                    <button>Tiếp tục mua sắm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
