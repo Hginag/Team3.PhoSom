@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+
+  /* banner */
+
+#banner-container {
+    position: relative;
+    background-image: url("./imagine/picture1.jpg"); /* Màu nền đen */
+    color: #fff; /* Màu chữ trắng */
+    padding: 150px 0; /* Khoảng cách giữa nội dung và viền trên dưới */
+    text-align: center; /* Căn giữa nội dung */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center; /* Căn giữa nội dung */
+    
+}
+
+#banner-row h3 {
+    font-size: 50px; /* Kích thước tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+#banner-row p {
+    font-size: 18px; /* Kích thước văn bản */
+    line-height: 1.6; /* Độ cao dòng */
+    max-width: 700px; /* Chiều rộng tối đa */
+    margin: 0 auto 20px; /* Khoảng cách giữa các đoạn văn bản */
+}
+
+#banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 56, 76, 0.7);
+    z-index: 1; /* Đặt lớp overlay phía sau nội dung */
+}
+
+#banner-col {
+    position: relative; /* Đặt vị trí tương đối để xác định vị trí cho nội dung */
+    z-index: 2; /* Đặt z-index để đặt nội dung phía trên lớp overlay */
+}
+ /*about*/
+ #history {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center; 
+ }
+
+.history-nd{
+    text-align: center; 
+    font-size: 20px;
+    Color: #35384C;
+    text-align: justify;
+}
+
+h2 {
+    position: relative; /* Đặt vị trí tương đối để thiết lập ngạch chân */
+    color: #FCB31E;
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+h2::after {
+    content: ''; /* Thêm nội dung vào gạch chân */
+    display: block; /* Hiển thị gạch chân dưới dạng một khối block */
+    width: 150px; /* Chiều rộng của gạch chân */
+    height: 3px; /* Độ dày của gạch chân */
+    background-color: #FCB31E; /* Màu sắc của gạch chân */
+    position: absolute; /* Đặt vị trí tuyệt đối của gạch chân */
+    bottom: 10px; /* Đặt gạch chân ở dưới đáy của phần tử h2 */
+    left: 50%; /* Đặt gạch chân bắt đầu từ giữa phần tử h2 */
+    transform: translateX(-50%); /* Dịch chuyển gạch chân về giữa phần tử h2 */
+}
+
+p:first-letter {
+    margin-left: 5ch; /* Lùi chữ cái đầu tiên 1 chữ "character" */
+}
+
+ol {
+    list-style-position: inside; /* Đặt marker bên trong thẻ li */
+    padding-left: 20px; /* Lùi đầu dòng của toàn bộ danh sách */
+}
+
+ol li {
+    text-indent: 5px; /* Lùi đầu dòng của marker */
+}
+
+
+.history-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 60%; /* Điều chỉnh theo nhu cầu */
+}
+
+ /*about*/
+ #employee {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center; 
+}
+.item p{
+    margin: 50px;
+    padding: 20px;
+}
+h2 {
+    color: #FCB31E;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.owl-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Canh đều các item */
+}
+
+.item {
+    width: 45%; /* Hiển thị 2 ảnh trên 1 hàng */
+    margin: 10px; /* Khoảng cách giữa các item */
+}
+
+.item img {
+    width: 50%; /* Ảnh lấp đầy item */
+    height: 70%; /* Đảm bảo tỷ lệ khung hình không bị biến đổi */
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy không gian được chỉ định */
+    border-radius: 20px;
+}
+
+.item p {
+    font-size: 20px; /* Kích thước chữ cho đoạn văn bản */
+    color: #35384C; /* Màu chữ */
+    font-family:"Roboto Condensed", sans-serif; /* Kiểu chữ */
+    margin: 10px 0; /* Khoảng cách giữa các đoạn văn bản */
+    text-align: center; /* Canh giữa văn bản */
+}
+
+
+
