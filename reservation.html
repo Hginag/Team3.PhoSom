@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt bàn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>Đây là header</p>
+        </div>
+        <!--end header-->
+        <div class="main">
+        <div class="tieude">
+            <div class="tieude1">
+                <p>PHỞ SỚM</p>
+            </div>
+            <div class="tieude2">
+                <p>ĐẶT BÀN</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="image">   <!--Chèn image ở đây-->
+                <img src="stan.png" alt="Ảnh bát phở" width=100%>
+            </div>
+            <!--end image-->
+
+            <div class="content">  <!--Chèn form đặt bàn ở đây-->
+                <form action="" method="POST" class="form-db">
+                    <div class="user-input-box">
+                        <select class="branchLocation" placeholder="Chọn Chi Nhánh">
+                            <option selected value> Chọn Cơ sở</option>
+                            <option value="value1">Cơ sở Cầu Giấy</option>
+                            <option value="value2">Cơ sở Hà Đông</option>
+                            <option value="value3">Cơ sở Hoàng Mai</option>
+                        </select>
+                    </div>
+                    <p>Vui lòng chọn cơ sở bạn muốn đặt bàn!</p>
+                    <div class="user-input-box">
+                        <input type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                placeholder="Họ và tên"/>
+                    </div>
+                    <p>Họ và tên không được để trống!</p>
+                    <div class="user-input-box">
+                        <input type="tel" 
+                                id="phonenumber" 
+                                name="phonenumber" 
+                                placeholder="Số điện thoại"/>
+                    </div>
+                    <p>Số điện thoại không được để trống!</p>
+                    <div class="user-input-box">
+                        <input type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Địa chỉ email"/>
+                    </div>
+                    <p>Địa chỉ email không được để trống!</p>
+                    <div class="user-input-box">
+                        <input type="date"
+                                id="date" 
+                                name="date" 
+                                placeholder="dd/mm/yyyy"/>
+                    </div> 
+                    <p>Ngày đặt bàn không được để trống!</p>               
+                    <div class="user-input-box">
+                        <select class="time" value="time">
+                            <option selected value> Giờ đặt bàn</option>
+                            <option>10h-13h</option>
+                            <option>17h-20h</option>
+                        </select>
+                    </div>
+                    <p>Giờ đặt bàn không được để trống!</p>
+                    <div class="user-input-box">
+                        <input type="number" 
+                                id="peopleCount" 
+                                name="peopleCount" 
+                                placeholder="Số lượng người"/>
+                    </div>
+                    <div class="user-input-box">
+                        <textarea rows="3"
+                                id="note" 
+                                name="note" 
+                                placeholder="Ghi chú"></textarea>
+                    </div>
+                    <div class="form-submit-btn">
+                        <input type="submit" value="ĐẶT BÀN NGAY"/>
+                    </div>
+                </form>
+
+            </div>
+            <!--end content-->
+        </div>
+        <!--end main-content-->
+    </div>
+    <!--end main-->
+        <div class="footer">
+            <p>đây là fooder</p>
+        </div>
+        <!--end footer-->
+    </div>
+</body>
+</html>
