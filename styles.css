@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    font-family: 'tahoma';
+}
+.wrapper{
+    margin: 0px auto;
+}
+.header{
+    background:#FCB31E;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/* nội dung*/
+.main{
+    background: #35384C;
+    padding: 20px;
+}
+
+
+.main .tieude{
+    text-align: center;
+}
+
+.main .tieude .tieude1 p{ 
+    font-size: 400%;
+    font-weight:bolder;
+    color:#FCB31E;
+    font-family: 'tahoma';
+    margin: 5px 0;
+}
+.main .tieude .tieude2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.main .tieude .tieude2::before,
+.main .tieude .tieude2::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #ffffff; /* Độ dày và màu của đường kẻ */
+  margin: 0 15px; /* Khoảng cách giữa đường kẻ và tiêu đề */
+}
+.main .tieude .tieude2 p{
+    font-size: 150%;
+    color:#fff;
+    font-weight:lighter;
+}
+
+
+.main .main-content{
+    display: flex;
+}
+.main .main-content .image{
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+.main .main-content .image img{
+    border-radius: 6px;
+}
+
+.main .main-content .content{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.main .main-content .content .form-db{
+    display: block;
+    unicode-bidi: isolate;
+    padding: 0 25px;
+    width: 95%;
+}
+.main .main-content .content .form-db p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-style: italic;
+    color: #FCB31E;
+    margin-top: -10px;
+}
+.main .main-content .content .form-db .user-input-box{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+}
+
+.main .main-content .content .form-db .user-input-box input{
+    height: 30px;
+    border: none;  
+    width: 100%;
+}
+.main .main-content .content .form-db .user-input-box select{
+    height: 30px;
+    border: none;  
+    width: 100%;
+}
+.main .main-content .content .form-db .user-input-box textarea{
+    height: 100px;
+    border: none;  
+    width: 100%;
+}
+
+
+.main .main-content .content .form-db .form-submit-btn{
+    background: #FCB31E;
+    height: 40px; 
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+.main .main-content .content .form-db .form-submit-btn input{
+    background: #FCB31E;
+    height: 40px; 
+    border: none;
+    color: #fff;
+    font-weight:lighter;
+
+}
+.footer{
+    background: #198CFB;
+    padding: 15px;
+}
