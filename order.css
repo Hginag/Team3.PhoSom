@@ -98,3 +98,9 @@ body {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+.product-card h3 {
+    color:#35384C;
+}
+.product-card p {
+    color:#198CFB;
+}
