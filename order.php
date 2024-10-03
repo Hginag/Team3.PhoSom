@@ -32,6 +32,11 @@
                 <h3>Món 2</h3>
                 <p>Giá bán: 60.000đ</p>
         </div>
+        <div class="product-card">
+        <img src="photai.jpg" alt="Món 3">
+                <h3>Món 3</h3>
+                <p>Giá bán: 60.000đ</p>
+        </div>
     </div>
 </body>
 </html>
