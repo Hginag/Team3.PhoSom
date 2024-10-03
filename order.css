@@ -58,7 +58,7 @@ body {
 .add-to-cart, .order-now {
     background-color: #35384C;
     color: #fff;
-    border: none;
+    border-radius: 5%;
     padding: 10px 20px;
     margin: 10px 5px;
     cursor: pointer;
