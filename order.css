@@ -91,9 +91,10 @@ body {
     margin: 10px;
     flex: 0 0 30%;
     transition: transform 0.2s;
+    text-align: center;
 }
 .product-card img {
-   width: 100%;
+   width: 50%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
