@@ -1,72 +1,98 @@
 body {
     font-family: Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 10px ;
+    padding: 10px;
     background-color: #35384C;
 }
 
-
-.product {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.product-container {
+            display: flex;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+.product-container img {
+            width: 70%;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+ .product-details {
+            display: flex;
+            flex-direction: column;
+        }
+.product-details h1 {
+            margin: 0 0 10px;
+            color: #35384C;
+            font-size: 25px;
+        }
+.product-details .price {
+            color: #198CFB;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+.quantity-control {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+.quantity-control button {
+            background-color: #FCB31E;
+            border-radius: 10%;
+            padding: 7px;
+            cursor: pointer;
+            border-color: #FCB31E;
+        }
+ .quantity-control input {
+            width: 40px;
+            text-align: center;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+.add-to-cart {
+            background-color: #35384C;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+            max-width: 30%;
+        }
+.description {
+            margin-top: 20px;
+        }
+ .description h2 {
+            color: #198CFB;
+        }
+        hr {
+    width: 50%;
+    height: 3px; 
+    background-color: rgb(252,179,30);
+    border: none; 
+    margin: 20px auto; 
 }
 
-
-.product h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #35384C;
-}
-
-
-.price {
-    color: #198CFB;
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-
-.quantity {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
-.quantity button {
-    background-color: #FCB31E;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
-.quantity input {
-    width: 30px;
-    text-align: center;
-    margin: 0 5px;
-    color: #35384C;
-}
-
-
-.add-to-cart, .order-now {
-    background-color: #35384C;
-    color: #fff;
-    border-radius: 5%;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    cursor: pointer;
-    font-size: 17px;
-}
-
-
-.product-info, .related-products {
+.related-products {
     background-color: #fff;
     padding: 20px;
     margin: 20px;
@@ -74,34 +100,39 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.product-info h2, .comments h2, .related-products h2 {
+.related-products h2 {
     margin: 0;
     font-size: 20px;
     color: #198CFB;
 }
-.related-products {
-    padding: 20px;
-}
-
 .product-card {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    flex: 0 0 30%;
+    flex: 0 0 100%;
     transition: transform 0.2s;
-    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
 }
 .product-card img {
-   width: 50%;
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+
 }
 .product-card h3 {
     color:#35384C;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .product-card p {
     color:#198CFB;
+    margin: 15px;
+    text-align: center;
 }
