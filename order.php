@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="product-container">
-        <img src="photai.jpg" alt="Món 1">
+        <img src="photai1.jpg" alt="Món 1">
         <div class="product-details">
             <h1>PHỞ TÁI </h1>
             <div class="price">60,000 VND</div>
