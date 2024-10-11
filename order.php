@@ -26,29 +26,29 @@
     </div>
     <hr>
     <div class="container">
-    <div class="related-products">
-            <h2>SẢN PHẨM CÙNG LOẠI</h2>
-        <div class="product-card">
-        <img src="photai.jpg" alt="Món 2">
-                <h3>Món 2</h3>
-                <p>Giá bán: 60.000đ</p>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 2">
+            <h3>Phở tái</h3>
         </div>
-        <div class="product-card">
-        <img src="photai.jpg" alt="Món 3">
-                <h3>Món 3</h3>
-                <p>Giá bán: 60.000đ</p>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 3">
+            <h3>Phở chín</h3>
         </div>
-        <div class="product-card">
-        <img src="photai.jpg" alt="Món 4">
-                <h3>Món 4</h3>
-                <p>Giá bán: 60.000đ</p>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 4">
+            <h3>Phở nạm</h3>
         </div>
-        <div class="product-card">
-        <img src="photai.jpg" alt="Món 5">
-                <h3>Món 5</h3>
-                <p>Giá bán: 60.000đ</p>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 5">
+            <h3>Phở bắp bò</h3>
         </div>
-    </div>
-</div>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 6">
+            <h3>Phở gà</h3>
+        </div>
+        <div class="menu-item">
+            <img src="pho.jpg" alt="Món 7">
+            <h3>Phở đặc biệt</h3>
+        </div>
 </body>
 </html>
