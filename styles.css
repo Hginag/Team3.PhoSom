@@ -11,6 +11,7 @@ body {
     background-color: #35384C;
     padding: 30px 40px;
     color: white;
+    border-bottom: 10px solid rgb(255, 255, 255);
 }
 .logo {
     display: flex;
@@ -99,7 +100,7 @@ footer {
     list-style: none;
     padding: 0;
     font-size: 18px;
-    line-height: 70px;
+    line-height: 30px;
 }
 .footer-right ul {
     list-style: none;
@@ -119,12 +120,12 @@ footer {
     color: #FCB31E;
 }
 .footer-social {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .footer-social a {
     margin: 0 30px;
 }
 .footer-social img {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
