@@ -8,6 +8,7 @@
 	rel="stylesheet"integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
 	crossorigin="anonymous"/>
 	<link rel="stylesheet" href="about.css" />
+	<link rel="stylesheet" href="styles.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"rel="stylesheet"/>
 	<title> Giới thiệu</title>
 </head>
