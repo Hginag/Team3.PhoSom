@@ -21,6 +21,11 @@
     margin-left: 80px;
 }
 
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
 .logo img {
     height: 80px;
     margin-right: 20px;
@@ -68,12 +73,12 @@
     }
 
     .logo {
-        margin-left: 0; /* Đảm bảo căn giữa */
+        margin-left: 0;
         justify-content: center;
     }
 
     .nav {
-        margin-right: 0; /* Đảm bảo căn giữa */
+        margin-right: 0;
         justify-content: center;
         gap: 5px;
         flex-wrap: wrap;
