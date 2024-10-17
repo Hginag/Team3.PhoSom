@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thanh Toán</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cột 1 -->
+        <div class="column column-small">
+            <h2>Thông tin giao hàng</h2>
+            <input type="text" placeholder="Số điện thoại của bạn">
+            <input type="text" placeholder="Địa chỉ cụ thể">
+            <select id="district" onchange="loadWards()">
+                <option value="">Chọn quận/huyện</option>
+                <option value="ba-dinh">Ba Đình</option>
+                <option value="hoan-kiem">Hoàn Kiếm</option>
+                <option value="tay-ho">Tây Hồ</option>
+                <option value="nam-tu-liem">Nam Từ Liêm</option>
+                <option value="cau-giay">Cầu Giấy</option>
+                <option value="thanh-xuan">Thanh Xuân</option>
+                <!-- Thêm các quận/huyện khác -->
+            </select>
+            <select id="ward">
+                <option value="">Chọn xã/phường</option>
+                <!-- Các xã/phường sẽ được tải động -->
+            </select>
+            <div class="button-container">
+                <button>Hoàn thành</button>
+            </div>
+        </div>
+        
+        <!-- Cột 2 -->
+        <div class="column column-medium">
+            <h2>Mua online</h2>
+            <div>
+                <h3>Phương thức thanh toán</h3>
+                <label><input type="radio" name="payment" value="cod"> Trả tiền mặt khi nhận hàng (COD)</label><br><br>
+                <label><input type="radio" name="payment" value="bank" onclick="showBankOptions()"> Tài khoản ngân hàng</label><br><br>
+                <label><input type="radio" name="payment" value="wallet" onclick="showWalletOptions()"> Ví điện tử</label>
+                
+                <div id="bank-options" style="display: none;">
+                    <h4>Chọn tài khoản ngân hàng</h4>
+                    <select>
+                        <option value="mb-bank">MB BANK</option>
+                        <option value="bidv">BIDV</option>
+                        <option value="tp-bank">TP BANK</option>
+                        <option value="vp-bank">VP BANK</option>
+                    </select>
+                </div>
+                
+                <div id="wallet-options" style="display: none;">
+                    <h4>Chọn ví điện tử</h4>
+                    <select>
+                        <option value="vnpay">VNPAY</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <h3>Voucher và Coupon</h3>
+                <input type="text" placeholder="Mã giảm giá (nếu có)">
+                <div class="button-container">
+                    <button>Áp dụng</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cột 3 -->
+        <div class="column column-medium">
+            <h2>Đơn hàng</h2> <hr>
+            <div id="order-summary">
+                <!-- Thông tin đơn hàng sẽ được chèn vào đây bằng JavaScript -->
+            </div><hr>
+                    <button>Thanh toán</button>
+        </div>
+    </div>
+
+    <script>
+        function showPaymentOptions() {
+            document.getElementById('payment-options').style.display = 'block';
+        }
+
+        function loadWards() {
+            const district = document.getElementById('district').value;
+            const wardSelect = document.getElementById('ward');
+            wardSelect.innerHTML = '<option value="">Chọn xã/phường</option>'; // Reset options
+
+            const wards = {
+                'ba-dinh': ['Phường 1', 'Phường 2'],
+                'hoan-kiem': ['Phường 3', 'Phường 4'],
+                'tay-ho': ['Phường 5', 'Phường 6'],
+                'nam-tu-liem': ['Phường 7', 'Phường 8'],
+                'cau-giay': ['Phường 9', 'Phường 10'],
+                'thanh-xuan': ['Phường 11', 'Phường 12']
+            };
+
+            if (wards[district]) {
+                wards[district].forEach(ward => {
+                    const option = document.createElement('option');
+                    option.value = ward.toLowerCase().replace(/ /g, '-');
+                    option.textContent = ward;
+                    wardSelect.appendChild(option);
+                });
+            }
+        }
+
+        function loadOrderSummary() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || getMockCartData();
+            let totalAmount = 0;
+            let shippingFee = 30000; // Giả sử phí vận chuyển là 30,000 VND
+            let discount = 0; // Giả sử không có giảm giá
+
+            const orderSummary = document.getElementById('order-summary');
+            orderSummary.innerHTML = '';
+
+            cart.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.innerHTML = `
+                    <p>${item.product} <span style="float: right;">x ${item.quantity}</span></p>
+                `;
+                orderSummary.appendChild(itemDiv);
+                totalAmount += item.total;
+            });
+
+            const totalDiv = document.createElement('div');
+            totalDiv.classList.add('order-summary');
+            totalDiv.innerHTML = `
+                <p>Tổng giá trị đơn hàng:</p>
+                <p>${totalAmount} VND</p>
+            `;
+            orderSummary.appendChild(totalDiv);
+
+            const shippingDiv = document.createElement('div');
+            shippingDiv.classList.add('order-summary');
+            shippingDiv.innerHTML = `
+                <p>Phí vận chuyển:</p>
+                <p>${shippingFee} VND</p>
+            `;
+            orderSummary.appendChild(shippingDiv);
+
+            const discountDiv = document.createElement('div');
+            discountDiv.classList.add('order-summary');
+            discountDiv.innerHTML = `
+                <p>Giảm giá:</p>
+                <p>${discount} VND</p>
+            `;
+            orderSummary.appendChild(discountDiv);
+
+            const finalTotalDiv = document.createElement('div');
+            finalTotalDiv.classList.add('order-summary');
+            finalTotalDiv.innerHTML = `
+                <p>Tổng cộng:</p>
+                <p>${totalAmount + shippingFee - discount} VND</p>
+            `;
+            orderSummary.appendChild(finalTotalDiv);
+        }
+
+        function getMockCartData() {
+            return [
+                { product: 'Phở bò', quantity: 2, price: 50000, total: 100000 },
+                { product: 'Phở gà', quantity: 1, price: 45000, total: 45000 }
+            ];
+        }
+
+        window.onload = loadOrderSummary;
+        function showBankOptions() {
+            document.getElementById('bank-options').style.display = 'block';
+            document.getElementById('wallet-options').style.display = 'none';
+        }
+
+        function showWalletOptions() {
+            document.getElementById('wallet-options').style.display = 'block';
+            document.getElementById('bank-options').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
