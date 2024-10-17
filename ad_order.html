@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin quản lý đơn hàng</title>
+    <link rel="stylesheet" href="ad_styles.css">
+</head>
+<body>
+<div class="wrap">
+    <header class="ad_header">
+        <img src="ad_logo.png" alt="logo quán" width= 60px>
+    </header>
+    <!--kết thúc header-->
+
+    <div  class="container">
+        <!--thanh điều khiển-->
+        <div class="sidebar">  
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="ad_overview.html">Tổng quan</a></li>
+                <li><a href="ad_order.html">Quản lý Đơn hàng</a></li>
+                <li><a href="ad_reservation.html">Quản lý Đặt bàn</a></li>
+                <li><a href="#">Quản lý khách hàng</a></li>
+            </ul>
+        </div>
+
+        <!--phần chính của trang-->
+        <div class="content">
+            <h2>Danh sách đơn hàng</h2>
+
+            <div class="ad_search">
+                <p>đây là thanh tìm kiếm</p>
+            </div>
+            <p class="content_p">Có tất cả 10 đơn hàng</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID đơn hàng</th>
+                        <th>Tên khách hàng</th>
+                        <th>Tổng</th>
+                        <th>Trạng thái đơn hàng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>John Doe</td>
+                        <td>$120.00</td>
+                        <td>Hoàn thành</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Jane Smith</td>
+                        <td>$250.00</td>
+                        <td>Huỷ</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>Mark Wilson</td>
+                        <td>$90.00</td>
+                        <td>Chờ xử lý</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

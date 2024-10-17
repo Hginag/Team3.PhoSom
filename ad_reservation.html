@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin quản lý đặt bàn</title>
+    <link rel="stylesheet" href="ad_styles.css">
+</head>
+<body>
+<div class="wrap">
+    <header class="ad_header">
+        <img src="ad_logo.png" alt="logo quán" width= 60px>
+    </header>
+    <!--kết thúc header-->
+
+    <div  class="container">
+        <!--thanh điều khiển-->
+        <div class="sidebar">  
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="ad_overview.html">Tổng quan</a></li>
+                <li><a href="ad_order.html">Quản lý Đơn hàng</a></li>
+                <li><a href="ad_reservation.html">Quản lý Đặt bàn</a></li>
+                <li><a href="#">Quản lý khách hàng</a></li>
+            </ul>
+        </div>
+
+        <!--phần chính của trang-->
+        <div class="content">
+            <h2>Danh sách đặt bàn</h2>
+
+            <div class="ad_search">
+                <p>đây là thanh tìm kiếm</p>
+            </div>
+            <p class="content_p">Có tất cả 10 đơn đặt bàn</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID đặt bàn</th>
+                        <th>Tên khách hàng</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày đặt bàn</th>
+                        <th>Trạng thái đơn hàng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>John Doe</td>
+                        <td>036658728</td>
+                        <td>25/10/2024</td>
+                        <td>Hoàn thành</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Jane Smith</td>
+                        <td>036548782</td>
+                        <td>21/11/2024</td>
+                        <td>Huỷ</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>Mark Wilson</td>
+                        <td>036548782</td>
+                        <td>20/10/2024</td>
+                        <td>Chờ xử lý</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

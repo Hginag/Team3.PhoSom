@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.wrap{
+    background: #b33d3d;
+    margin: 0px auto;
+    min-width: 800px;
+}
+/*header admin*/
+.ad_header {
+    background-color: #35384C;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin:0px;
+}
+
+/*content*/
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    min-width: 180px;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+    width: 250px;
+}
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    min-width: 500px;
+}
+.box{
+    width: 45%;
+    padding: 5px;
+    background: #555;
+}
+
+.content_p{
+    font-size: small;
+    color: #b33d3d;
+    text-align: right;
+    padding-bottom: 5px;
+}
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+.btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
