@@ -72,25 +72,21 @@
         <footer>
         <div class="footer-content">
             <div class="footer-center">
-            <img src="logo.png" alt="Logo" class="footer-logo">
-            <h2>PHỞ SỚM</h2>
-            <p><i>Thơm lừng, ngon tuyệt</i></p>
+                <img src="logo.png" alt="Logo" class="footer-logo">
+                    <h2><b>PHỞ SỚM</b></h2>
+                    <p><i>Thơm lừng, ngon tuyệt</i></p>
             </div>
             <div class="footer-line">
-            <div class="footer-left">
-                <ul>
-                <li><a href="">Trang Chủ</a></li>
-                <li><a href="">Giới Thiệu</a></li>
-                <li><a href="">Đặt Bàn</a></li>
-                <li><a href="">Đặt Món</a></li>
-                </ul>
-            </div>
+                <div class="footer-left">
+                    <ul>
+                    <li><h3><b>Thông tin liên lạc</b></h3>
+                    Địa chỉ: Số 23 Hồ Tùng Mậu, P. Mai Dịch, Q. Cầu Giấy, TP. Hà Nội 
+                            <br> Hotline: 0922 266 966
+                            <br> Email: cskhphosom@gmail.com</li>
+                    </ul>
+                </div>
             <div class="footer-right">
-                <ul>
-                <li><h3><b>Chi Nhánh Hà Nội</b></h3>
-                    <i> Địa chỉ: Số 23 Hồ Tùng Mậu, P. Mai Dịch, Q. Cầu Giấy, TP. Hà Nội 
-                        <br> Điện thoại: 0922 266 966</i></li>
-                </ul>
+                <p><b>Phở Sớm</b> không chỉ là nơi để thưởng thức một tô phở ngon miệng, mà còn là một điểm hẹn lưu giữ những khoảnh khắc đẹp, nơi mọi người cùng nhau chia sẻ niềm vui và sự ấm áp ngay từ sớm bình minh. <b>Phở Sớm - Thơm lừng, ngon tuyệt!</b></p>
             </div>
             </div>
             <div class="footer-social">
@@ -100,5 +96,5 @@
             </div>
         </div>
         </footer>
-</body>
+    </body>         
 </html>
