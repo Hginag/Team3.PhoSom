@@ -1,0 +1,160 @@
+
+
+.wrapper{
+    margin: 150px 600px 80px 600px;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(117, 119, 139, 0.5);
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+.wrapper.active{
+    height: 520px; 
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 20px;
+}
+.wrapper .icon-close{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background:#FCB31E;
+    font-size: 2em;
+    color: #35384C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor:pointer;
+    z-index: 1;
+}
+.form-box h2{
+    font-size:2em;
+    color: #35384C;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #35384C;
+    margin: 30px 0;
+}
+.input-box  label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    font-size: 1em;
+    color:#35384C;
+    font-weight: 500;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: none;
+    color:#35384C;
+    font-weight: 600;
+    padding:0 35px 0 5px ;
+}
+
+.input-box .icon{
+    position:absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:#35384C;
+    line-height:57px ;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color:#35384C;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: #35384C;
+    margin-right: 3px;
+} 
+
+.remember-forgot a{
+    color: #35384C;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration:underline;
+}
+
+.form-box.login .btn{
+    width: 100%;
+    height:45px ;
+    background: #FCB31E;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: poiter;
+    font-size: 1em;
+    color:#35384C;
+    font-weight: 500;
+}
+
+.form-box.login .btn:hover{
+    font-size:1.2em;
+}
+
+.form-box.register .btn{
+    width: 100%;
+    height:45px ;
+    background: #FCB31E;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: poiter;
+    font-size: 1em;
+    color: #35384C;
+    font-weight: 500;
+}
+
+.form-box.register .btn:hover{
+    font-size:1.2em;
+}
+
+.login-register{
+    font-size: .9em;
+    color:#35384C;
+    text-align: center;
+    font-weight: 500;
+    margin:  25px 0 10px;
+}
+
+.login-register p a{
+    color:#35384C;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
