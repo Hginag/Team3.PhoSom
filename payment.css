@@ -1,0 +1,86 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Tăng khoảng cách giữa các cột */
+    padding: 30px; /* Tăng padding xung quanh container */
+    margin-bottom: 40px; /* Thêm khoảng cách giữa container và footer */
+}
+
+.column {
+    padding: 30px; /* Tăng padding bên trong cột */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Làm tròn các góc */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Thêm khoảng cách dưới để giãn ra khỏi các phần tử khác */
+}
+
+.column-small {
+    width: 20%;
+}
+
+.column-medium {
+    width: 40%;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Tăng khoảng cách để tránh dính vào phần khác */
+}
+
+h2 {
+    color: #FCB31E;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.payment-methods h3 {
+    margin-bottom: 15px; /* Thêm khoảng cách dưới tiêu đề */
+}
+.payment-methods label {
+    display: block;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới */
+}
+.payment-methods div {
+    margin-bottom: 20px; /* Thêm khoảng cách dưới các phần */
+}
+
+button {
+    background-color: #FCB31E;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Tăng kích thước nút bấm */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0; /* Tăng khoảng cách trên dưới */
+}
+
+button:hover {
+    background-color: #e0a10d;
+}
+
+input[type="text"], select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px; /* Làm tròn các góc */
+}
